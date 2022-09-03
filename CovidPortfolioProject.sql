@@ -20,7 +20,7 @@ FROM PortfolioProject..CovidDeaths
 WHERE location Like '%Uzbekistan%' and continent is not null
 Order By 1,2
 
--- Loking at Cases versus Population
+-- Looking at Cases versus Population
 -- Shows how many persentage of population got Covid
 SELECT location, date,population, total_cases,(total_cases/population)*100 as CasePersentage
 FROM PortfolioProject..CovidDeaths
